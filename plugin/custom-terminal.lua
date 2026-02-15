@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("CmdlineEnter", {
 vim.api.nvim_create_autocmd("CmdlineLeave", {
 	pattern = { "*" },
 	callback = function()
-		log.notify("Terminal closed")
+		log.notify("debug", vim.log.levels.DEBUG, true, "Terminal closed")
 	end,
 })
 _G.CUSTOM_TERM_LOADED = true
