@@ -10,7 +10,7 @@ end
 vim.api.nvim_create_autocmd("CmdlineEnter", {
 	pattern = { "*" },
 	callback = function()
-		log.notify("Terminal opened")
+		log.notify("debug", vim.log.levels.DEBUG, true, "Terminal opened")
 	end,
 })
 

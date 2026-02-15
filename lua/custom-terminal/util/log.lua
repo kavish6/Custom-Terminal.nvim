@@ -38,9 +38,9 @@ function log.notify(scope, level, verbose, str, ...)
 	end
 
 	vim.notify(
-		string.format("[your-plugin-name.nvim@%s] %s", scope, string.format(str, ...)),
+		string.format("[custom-terminal.nvim@%s] %s", scope, string.format(str, ...)),
 		level,
-		{ title = "your-plugin-name.nvim" }
+		{ title = "custom-terminal.nvim" }
 	)
 end
 
