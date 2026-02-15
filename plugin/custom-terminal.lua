@@ -1,4 +1,9 @@
 local log = require("custom-terminal.util.log")
+_G.CUSTOM_TERM = {
+	config = {
+		debug = true,
+	},
+}
 if _G.CUSTOM_TERM_LOADED then
 	return
 end
